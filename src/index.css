@@ -1,0 +1,161 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 6%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 271 81% 56%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 14%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 63%;
+
+    --accent: 271 81% 56%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 14%;
+    --input: 0 0% 14%;
+    --ring: 271 81% 56%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 271 81% 56%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 14%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 14%;
+    --sidebar-ring: 271 81% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background-image: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.1) 0%, transparent 50%),
+                      radial-gradient(circle at 80% 20%, rgba(168, 85, 247, 0.1) 0%, transparent 50%),
+                      radial-gradient(circle at 40% 40%, rgba(79, 70, 229, 0.05) 0%, transparent 50%);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #a855f7, #e879f9, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+  }
+
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .hover-glow {
+    transition: all 0.3s ease;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.3);
+    transform: translateY(-2px);
+  }
+}
+
+.glitch-text {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.glitch-text::before,
+.glitch-text::after,
+.glitch-text .glitch-layer {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.glitch-text::before {
+  animation: glitch1 2s infinite linear alternate-reverse;
+  color: #f0f; /* pink */
+  z-index: 1;
+}
+
+.glitch-text::after {
+  animation: glitch2 2s infinite linear alternate-reverse;
+  color: #0ff; /* cyan */
+  z-index: 1;
+}
+
+.glitch-text .glitch-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ff0; /* yellow layer */
+  animation: glitch3 1.5s infinite linear alternate-reverse;
+  z-index: 0;
+}
+
+@keyframes glitch1 {
+  0% { clip: rect(2px, 9999px, 6px, 0); transform: translate(-3px, -2px); }
+  25% { clip: rect(5px, 9999px, 10px, 0); transform: translate(3px, 2px); }
+  50% { clip: rect(3px, 9999px, 6px, 0); transform: translate(-1px, 1px); }
+  75% { clip: rect(5px, 9999px, 8px, 0); transform: translate(1px, -1px); }
+  100% { clip: rect(2px, 9999px, 5px, 0); transform: translate(-2px, 0); }
+}
+
+@keyframes glitch2 {
+  0% { clip: rect(10px, 9999px, 15px, 0); transform: translate(2px, 1px); }
+  25% { clip: rect(15px, 9999px, 20px, 0); transform: translate(-2px, -2px); }
+  50% { clip: rect(12px, 9999px, 16px, 0); transform: translate(1px, -1px); }
+  75% { clip: rect(14px, 9999px, 18px, 0); transform: translate(-1px, 2px); }
+  100% { clip: rect(10px, 9999px, 15px, 0); transform: translate(2px, 0); }
+}
+
+@keyframes glitch3 {
+  0% { clip: rect(0, 9999px, 5px, 0); transform: translate(1px, -1px); }
+  25% { clip: rect(3px, 9999px, 8px, 0); transform: translate(-1px, 2px); }
+  50% { clip: rect(2px, 9999px, 6px, 0); transform: translate(2px, 0); }
+  75% { clip: rect(4px, 9999px, 9px, 0); transform: translate(-2px, 1px); }
+  100% { clip: rect(1px, 9999px, 4px, 0); transform: translate(0, -2px); }
+}
+
+
