@@ -107,7 +107,7 @@ const Contact = () => {
               <ul className="space-y-3 text-gray-400">
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                  <span>Web development with Symfony, React, and modern web technologies</span>
+                  <span>Web development with React, and modern web technologies</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
@@ -117,10 +117,7 @@ const Contact = () => {
                   <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
                   <span>Cybersecurity testing, auditing, and vulnerability analysis</span>
                 </li>
-                <li className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                  <span>AI-powered web solutions & automation scripts</span>
-                </li>
+                
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
                   <span>Professional graphic design for branding & digital content</span>
