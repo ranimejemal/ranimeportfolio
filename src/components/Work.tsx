@@ -49,20 +49,8 @@ const Work = () => {
         "Luxury beauty center booking online with Google Calendar integration",
       link: "https://bslbeauty.vercel.app/",
     },
-    {
-      image: "/Capture d'écran 2025-12-25 102930.png",
-      title: "Premium beauty center website",
-      description:
-        "Luxury beauty center booking online with Google Calendar integration",
-      link: "https://bslbeauty.vercel.app/",
-    },
-    {
-      image: "/Capture d'écran 2025-12-25 102930.png",
-      title: "Premium beauty center website",
-      description:
-        "Luxury beauty center booking online with Google Calendar integration",
-      link: "https://bslbeauty.vercel.app/",
-    },
+    
+    
     {
       image: "/6fa86a4f-f735-4fd1-b190-fe7278159a71.png",
       title: "Gaming Login Interface",
