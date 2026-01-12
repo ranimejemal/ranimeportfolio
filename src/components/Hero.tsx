@@ -18,34 +18,26 @@ const Button = ({ children, onClick, variant = 'default', className, ...props })
 
 /* ---------------- CV MODAL ---------------- */
 
+/* ---------------- CV MODAL ---------------- */
+/* ---------------- CV MODAL ---------------- */
 const CVModal = ({ isOpen, onClose }) => {
-  const [numPages, setNumPages] = useState(null);
-
   if (!isOpen) return null;
 
-  const onDocumentLoadSuccess = ({ numPages }) => setNumPages(numPages);
-
   return (
-    <div className="fixed inset-0 bg-black/80 z-[100] flex items-center justify-center p-4">
+    <div
+      className="fixed inset-0 bg-black/80 z-[100] flex items-center justify-center p-4"
+      onClick={onClose} // close when clicking outside
+    >
       <div
         className="bg-white rounded-xl shadow-2xl overflow-auto w-full max-w-lg md:max-w-4xl max-h-[90vh] p-4 md:p-8"
-        onClick={(e) => e.stopPropagation()}
+        onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
       >
-        <Document
-          file="/RANIME_JEMAL_CV (2).pdf"
-          onLoadSuccess={onDocumentLoadSuccess}
-          className="w-full"
-          
-
-        >
-          {Array.from(new Array(numPages), (el, index) => (
-            <Page
-              key={`page_${index + 1}`}
-              pageNumber={index + 1}
-              width={Math.min(window.innerWidth * 0.9, 800)}
-            />
-          ))}
-        </Document>
+        {/* Embed PDF directly */}
+        <iframe
+          src="/RANIME_JEMAL_CV (2).pdf"
+          className="w-full h-[80vh]"
+          title="CV"
+        />
 
         <div className="flex justify-center mt-6">
           <button
@@ -59,6 +51,7 @@ const CVModal = ({ isOpen, onClose }) => {
     </div>
   );
 };
+
 
 
 

@@ -52,16 +52,24 @@ const LogoAnimation = ({ onComplete }: LogoAnimationProps) => {
         fadeOut ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
     >
-      <video
-        ref={videoRef}
-        src="/0927.mp4"
-        autoPlay
-        muted
-        playsInline
-        className="w-full h-full object-cover"
-      >
-        Your browser does not support the video tag.
-      </video>
+     <video
+  ref={videoRef}
+  src="/0927.mp4"
+  autoPlay
+  muted
+  playsInline
+  className="
+    fixed top-0 left-0 z-50
+    w-screen h-screen
+    object-cover
+    transform rotate-90
+    md:rotate-0 md:w-full md:h-full
+  "
+>
+  Your browser does not support the video tag.
+</video>
+
+
     </div>
   );
 };
