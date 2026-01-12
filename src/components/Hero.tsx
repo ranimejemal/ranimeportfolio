@@ -179,7 +179,7 @@ const Hero = () => {
           </h1>
           <br />
           <h2 className="text-xl md:text-xl text-gray-300 mb-8 font-mono leading-relaxed">
-            • Cybersecurity & Cloud Engineer <br />
+            • Cybersecurity & Cloud Engineering Student <br />
             • Web Developer <br />
             • UI/UX Designer <br />
             • Graphic Designer <br />

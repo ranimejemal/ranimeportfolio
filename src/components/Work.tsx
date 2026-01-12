@@ -4,17 +4,25 @@ const Work = () => {
   const [previewImage, setPreviewImage] = useState<string | null>(null);
 
   const projects = [
-    {
-      image: "/6fa86a4f-f735-4fd1-b190-fe7278159a71.png",
-      title: "Gaming Login Interface",
-      description: "Modern gaming platform login design with futuristic UI elements",
-      previewOnly: true,
+     {
+      image: "/Capture d'écran 2025-12-28 122835.png",
+      title: "Wifi sniffing",
+      description:
+        "Detects nearby devices asking for Wi-Fi networks using Python & Scapy. Shows unique SSIDs in real-time.",
+      link: "https://github.com/ranimejemal/wifi-sniffing",
     },
+    
     {
       image: "/Capture d'écran 2025-12-25 101610.png",
       title: "SJA website",
       description: "Premium architecture design and construction",
       link: "https://sja-website.vercel.app/",
+    },
+    {
+      image: "/Capture d'écran 2026-01-11 233205.png",
+      title: "ecommerce magazin website",
+      description: "modern e-commerce web app built with performance, usability, and scalability in mind.",
+      link: "https://magazin-rust.vercel.app/",
     },
     {
       image: "/Capture d'écran 2025-12-25 101709.png",
@@ -41,9 +49,36 @@ const Work = () => {
         "Luxury beauty center booking online with Google Calendar integration",
       link: "https://bslbeauty.vercel.app/",
     },
+    {
+      image: "/Capture d'écran 2025-12-25 102930.png",
+      title: "Premium beauty center website",
+      description:
+        "Luxury beauty center booking online with Google Calendar integration",
+      link: "https://bslbeauty.vercel.app/",
+    },
+    {
+      image: "/Capture d'écran 2025-12-25 102930.png",
+      title: "Premium beauty center website",
+      description:
+        "Luxury beauty center booking online with Google Calendar integration",
+      link: "https://bslbeauty.vercel.app/",
+    },
+    {
+      image: "/6fa86a4f-f735-4fd1-b190-fe7278159a71.png",
+      title: "Gaming Login Interface",
+      description: "Modern gaming platform login design with futuristic UI elements",
+      previewOnly: true,
+    },
+   
   ];
 
   const certifications = [
+    {
+      title: "Fundamentals of Deep Learning",
+      issuer: "NVIDIA DLI",
+      image: "/Capture d'écran 2026-01-11 155148.png",
+      previewOnly: true,
+    },
     {
       title: "CERTIFICATE OF ENGLISH LANGUAGE",
       issuer: "Emperial English UK",
@@ -111,44 +146,68 @@ const Work = () => {
                 alt={project.title}
                 className="w-full h-48 object-cover"
               />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">
-                  {project.title}
-                </h3>
-                <p className="text-gray-400 text-sm">{project.description}</p>
-              </div>
+              <div className="absolute top-2 right-2 bg-black bg-opacity-50 rounded-full p-2 opacity-70 group-hover:opacity-100 transition-opacity">
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+    </svg>
+  </div>
+
+  <div className="p-6">
+    <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
+    <p className="text-gray-400 text-sm">{project.description}</p>
+  </div>
             </div>
           ))}
         </div>
 
-        {/* Certifications */}
-        <div className="text-center mb-8">
-          <h3 className="text-3xl font-bold text-gradient mb-6">Certifications</h3>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Some of the professional certifications I hold to strengthen my skills in cybersecurity, cloud, and UX design.
-          </p>
+       {/* Certifications */}
+<div className="text-center mb-8">
+  <h3 className="text-3xl font-bold text-gradient mb-6">Certifications</h3>
+  <p className="text-gray-400 max-w-2xl mx-auto">
+    Some of the professional certifications I hold to strengthen my skills in cybersecurity, cloud, and UX design.
+  </p>
+</div>
+<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+  {certifications.map((cert, index) => (
+    <div
+      key={index}
+      onClick={() => setPreviewImage(cert.image)}
+      className="glass-effect rounded-2xl hover-glow transition-all duration-300 cursor-pointer flex flex-col items-center text-center overflow-hidden group"
+    >
+      <div className="w-full h-64 relative">
+        <img
+          src={cert.image}
+          alt={cert.title}
+          className="w-full h-full object-cover rounded-t-2xl"
+        />
+
+        {/* Clickable indicator */}
+        <div className="absolute top-2 right-2 bg-black bg-opacity-50 rounded-full p-2 opacity-70 group-hover:opacity-100 transition-opacity">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {certifications.map((cert, index) => (
-            <div
-              key={index}
-              onClick={() => setPreviewImage(cert.image)}
-              className="glass-effect rounded-2xl hover-glow transition-all duration-300 cursor-pointer flex flex-col items-center text-center overflow-hidden"
-            >
-              <div className="w-full h-64 relative">
-                <img
-                  src={cert.image}
-                  alt={cert.title}
-                  className="w-full h-full object-cover rounded-t-2xl"
-                />
-              </div>
-              <div className="p-4">
-                <h4 className="text-xl font-semibold text-white">{cert.title}</h4>
-                <p className="text-gray-400 text-sm">{cert.issuer}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+      </div>
+
+      <div className="p-4">
+        <h4 className="text-xl font-semibold text-white">{cert.title}</h4>
+        <p className="text-gray-400 text-sm">{cert.issuer}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
 
         {/* Preview Modal */}
         {previewImage && (
