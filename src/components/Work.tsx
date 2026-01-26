@@ -68,6 +68,12 @@ const Work = () => {
       previewOnly: true,
     },
     {
+      title: "Foundational C# with Microsoft",
+      issuer: "Free code camp & Microsoft",
+      image: "/Capture d'écran 2026-01-26 065109.png",
+      previewOnly: true,
+    },
+    {
       title: "CERTIFICATE OF ENGLISH LANGUAGE",
       issuer: "Emperial English UK",
       image: "/ranime_jemal_CA63JN2_8426709_page-0001.jpg",
