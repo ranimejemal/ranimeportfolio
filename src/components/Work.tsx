@@ -11,13 +11,15 @@ const Work = () => {
         "Detects nearby devices asking for Wi-Fi networks using Python & Scapy. Shows unique SSIDs in real-time.",
       link: "https://github.com/ranimejemal/wifi-sniffing",
     },
+     {
+
+  image: "/Capture d'écran 2026-03-06 211140.png",
+  title: "Beauty Center Website",
+  description: "Sleek and interactive beauty center website with online booking, user sign-in, and seamless appointment management. Fully responsive, user-friendly, and powered by EmailJS for instant confirmations.",
+  link: "https://www.studiobeautebyhanene.com/",
+},
     
-    {
-      image: "/Capture d'écran 2026-04-30 140115.png",
-      title: "GYM website",
-      description: "Premium gym design and booking platform ",
-      link: "https://sharkgym-ignite.vercel.app/",
-    },
+    
 
     {
       image: "/Capture d'écran 2025-12-25 101610.png",
@@ -43,13 +45,13 @@ const Work = () => {
       description: "Cozy and elegant coffee shop online",
       link: "https://larivedor.vercel.app/",
     },
-    {
-
-  image: "/Capture d'écran 2026-03-06 211140.png",
-  title: "Beauty Center Website",
-  description: "Sleek and interactive beauty center website with online booking, user sign-in, and seamless appointment management. Fully responsive, user-friendly, and powered by EmailJS for instant confirmations.",
-  link: "https://www.studiobeautebyhanene.com/",
-},
+   
+{
+      image: "/Capture d'écran 2026-04-30 140115.png",
+      title: "GYM website",
+      description: "Premium gym design and booking platform ",
+      link: "https://sharkgym-ignite.vercel.app/",
+    },
       
     {
       image: "/Capture d'écran 2025-12-25 102930.png",
