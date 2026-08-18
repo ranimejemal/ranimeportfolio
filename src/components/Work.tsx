@@ -4,19 +4,19 @@ const Work = () => {
   const [previewImage, setPreviewImage] = useState<string | null>(null);
 
   const projects = [
-     {
-      image: "/Capture d'écran 2025-12-28 122835.png",
-      title: "Wifi sniffing",
-      description:
-        "Detects nearby devices asking for Wi-Fi networks using Python & Scapy. Shows unique SSIDs in real-time.",
-      link: "https://github.com/ranimejemal/wifi-sniffing",
-    },
+    {
+
+  image: "/Capture d'écran 2026-08-18 145222.png",
+  title: "PayChain website",
+  description: "PayChain is a blockchain-powered platform for fast, secure, and seamless international money transfers, enabling users to send payments across borders with greater speed and transparency.",
+  link: "https://paychain-instant-global-transfers.vercel.app/",
+},
      {
 
   image: "/Capture d'écran 2026-03-06 211140.png",
   title: "Beauty Center Website",
   description: "Sleek and interactive beauty center website with online booking, user sign-in, and seamless appointment management. Fully responsive, user-friendly, and powered by EmailJS for instant confirmations.",
-  link: "https://www.studiobeautebyhanene.com/",
+  link: "https://studiobeautybyhananewebsite.vercel.app/",
 },
     
     
