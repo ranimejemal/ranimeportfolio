@@ -27,6 +27,30 @@ const Work = () => {
   link: "http://glamour-glow-salon.vercel.app/",
 },
 
+
+{
+      image: "/image.png",
+      title: "La Rive D'Or website",
+      description: "Cozy and elegant coffee shop online",
+      link: "https://larivedor.vercel.app/",
+    },
+   
+{
+      image: "/Capture d'écran 2026-04-30 140115.png",
+      title: "GYM website",
+      description: "Premium gym design and booking platform ",
+      link: "https://sharkgym-ignite.vercel.app/",
+    },
+      
+    {
+      image: "/Capture d'écran 2025-12-25 102930.png",
+      title: "Premium beauty center website",
+      description:
+        "Luxury beauty center booking online with Google Calendar integration",
+      link: "https://bslbeauty.vercel.app/",
+    },
+    
+
  {
 
   image: "/Capture d'écran 2026-08-18 145222.png",
@@ -54,27 +78,6 @@ const Work = () => {
       title: "AEROSPRIM website",
       description: "Aerospace website with 3D rocket",
       link: "https://aerosprim.vercel.app/",
-    },
-    {
-      image: "/image.png",
-      title: "La Rive D'Or website",
-      description: "Cozy and elegant coffee shop online",
-      link: "https://larivedor.vercel.app/",
-    },
-   
-{
-      image: "/Capture d'écran 2026-04-30 140115.png",
-      title: "GYM website",
-      description: "Premium gym design and booking platform ",
-      link: "https://sharkgym-ignite.vercel.app/",
-    },
-      
-    {
-      image: "/Capture d'écran 2025-12-25 102930.png",
-      title: "Premium beauty center website",
-      description:
-        "Luxury beauty center booking online with Google Calendar integration",
-      link: "https://bslbeauty.vercel.app/",
     },
     
     
