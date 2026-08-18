@@ -4,19 +4,35 @@ const Work = () => {
   const [previewImage, setPreviewImage] = useState<string | null>(null);
 
   const projects = [
-    {
-
-  image: "/Capture d'écran 2026-08-18 145222.png",
-  title: "PayChain website",
-  description: "PayChain is a blockchain-powered platform for fast, secure, and seamless international money transfers, enabling users to send payments across borders with greater speed and transparency.",
-  link: "https://paychain-instant-global-transfers.vercel.app/",
-},
+   
      {
 
   image: "/Capture d'écran 2026-03-06 211140.png",
   title: "Beauty Center Website",
   description: "Sleek and interactive beauty center website with online booking, user sign-in, and seamless appointment management. Fully responsive, user-friendly, and powered by EmailJS for instant confirmations.",
   link: "https://studiobeautybyhananewebsite.vercel.app/",
+},
+ {
+
+  image: "/Capture d'écran 2026-08-18 170538.png",
+  title: "Beauty Center Website",
+  description: "Luxury beauty center booking online with Google Calendar integration",
+  link: "https://secret-colors-salon.vercel.app/",
+},
+ {
+
+  image: "/Capture d'écran 2026-08-18 170501.png",
+  title: "Beauty Center Website",
+  description: "Luxury beauty center booking online with Google Calendar integration",
+  link: "http://glamour-glow-salon.vercel.app/",
+},
+
+ {
+
+  image: "/Capture d'écran 2026-08-18 145222.png",
+  title: "PayChain website",
+  description: "PayChain is a blockchain-powered platform for fast, secure, and seamless international money transfers, enabling users to send payments across borders with greater speed and transparency.",
+  link: "https://paychain-instant-global-transfers.vercel.app/",
 },
     
     
